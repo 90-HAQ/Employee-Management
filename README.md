@@ -67,7 +67,7 @@ Contributions are always welcome and appreciated.
 
 ## Authors
 
-- [@Khawar Shahzad](https://github.com/khawars282) - Search Employee / User Signup / Forget Password
+- [@Khawar Shahzad](https://github.com/khawars282) - Search Employee / User Signup
 
 - [@Hussain Ali](https://github.com/90-HAQ) - User login / Employee List / Add Employee
 
