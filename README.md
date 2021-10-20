@@ -61,7 +61,7 @@ To deploy this project run
 
 - MYSQLI DATABASES
 
-## Contriuting
+## Contribution
 
 Contributions are always welcome and appreciated.
 
