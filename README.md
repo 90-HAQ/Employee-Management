@@ -14,7 +14,7 @@ The Documentation is avaliable at [click here](https://github.com/90-HAQ/Employe
  - Add Employee
  - Search Employee
  - Employee Listing
-
+ - Forget Password
 
 ## Installation
 
@@ -67,7 +67,7 @@ Contributions are always welcome and appreciated.
 
 ## Authors
 
-- [@Khawar Shahzad](https://github.com/khawars282) - Search Employee / User Signup
+- [@Khawar Shahzad](https://github.com/khawars282) - Search Employee / User Signup / Forget Password
 
 - [@Hussain Ali](https://github.com/90-HAQ) - User login / Employee List / Add Employee
 
