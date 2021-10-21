@@ -5,7 +5,7 @@ The purpose of this project is to develop an management system where new user re
 
 ## Documentation
 
-The Documentation is avaliable at [click here](https://shields.io/)
+The Documentation is avaliable at [click here](https://github.com/90-HAQ/Employee-Management/blob/main/SRS_Document.docx)
 
 ## Features
 
