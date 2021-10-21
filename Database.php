@@ -18,24 +18,16 @@ class Database{
     public function close_connection($conn){   //close database connection
         $conn->close();
     }
+    // This functioon is used to forget save password where email
 
-     // Function to insert user or Employee in database.
-      
+    public function save_password_in_db($password,$email)    //here we set password in database
+    {
+        $conn = self::build_connection();                                           //connectivity with database
+         $sql = "update user set userPassword='{$password}' where Email='{$email}'";   // set password         
+        $result = $conn->query($sql) or exit("sql query failed");                    //Running Query
+         self::close_connection($conn);   //connection close with database
+    } 
      
-    function insert($tableName,$perameter){
-        if ($tableName == "user"){
-            $innerPera = "Name,phone,address,gender,email,userPassword";
-        }else{
-            $innerPera = "Name,Phone,Address,Deparment,Gender,Email";
-        }
-        $S = implode("','",$perameter);
-        $data = "'".$S."'";
-        $conn = self::build_connection();
-        $sql = "insert into $tableName($innerPera) values($data)";
-        $conn->query($sql);
-        self::close_connection($conn);
-    }
-
 
     
      // This function is used to select user from table with the specific email.
@@ -72,6 +64,23 @@ class Database{
         }   
         self::close_connection($conn);
     }
+    // Function to insert user or Employee in database.
+      
+     
+    function insert($tableName,$perameter){
+        if ($tableName == "user"){
+            $innerPera = "Name,phone,address,gender,email,userPassword";
+        }else{
+            $innerPera = "Name,Phone,Address,Deparment,Gender,Email";
+        }
+        $S = implode("','",$perameter);
+        $data = "'".$S."'";
+        $conn = self::build_connection();
+        $sql = "insert into $tableName($innerPera) values($data)";
+        $conn->query($sql);
+        self::close_connection($conn);
+    }
+
    
 }
 
